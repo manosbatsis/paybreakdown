@@ -6,6 +6,7 @@
 	- [Assumptions:](#assumptions)
 	- [Example:](#example)
 - [Solution](#solution)
+	- [Notes](#notes)
 	- [Prerequisites](#prerequisites)
 	- [Checkout](#checkout)
 	- [Build](#build)
@@ -49,6 +50,12 @@ Shifts (worker, start, end)
 
 ## Solution
 
+### Notes
+
+For simplicity, the implementation assumes any rate or shift is contained within a single 24h/calendar day .
+
+In a real project, I would probably implement this via MapStruct converters between custom containers.
+
 ### Prerequisites
 
 - Java Development Kit 1.8 (either OpenJDK or Oracle)
@@ -71,5 +78,6 @@ mvn  clean install
 ### Main Components
 
 - Models: see [src/main/java/paybreakdown/model](src/main/java/paybreakdown/model)
+- Util: see [src/main/java/paybreakdown/util](src/main/java/paybreakdown/util)
 - App: see [src/main/java/paybreakdown/App.java](src/main/java/paybreakdown/App.java)
 - Tests: see [src/test/java/paybreakdown/AppTest.java](src/test/java/paybreakdown/AppTest.java)

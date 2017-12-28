@@ -1,6 +1,7 @@
 package paybreakdown.model;
 
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 import lombok.Builder;
 import lombok.Data;
@@ -20,4 +21,5 @@ public class Shift {
 
 	@NonNull
 	private String workerId;
+
 }
